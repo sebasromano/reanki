@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: var(--color-cream);
+  border: 3px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 4px 4px 0 var(--color-ink);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.backLink {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  color: var(--color-ink);
+  text-decoration: none;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.backLink:hover {
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
+.titleGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.icon {
+  font-size: 2rem;
+  filter: drop-shadow(2px 2px 0 var(--color-ink));
+}
+
+.sceneNumber {
+  font-family: var(--font-display);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent-rust);
+}
+
+.label {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.mistakeTracker {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.mistakeLabel {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.hearts {
+  display: flex;
+  gap: 4px;
+}
+
+.heartFull {
+  color: #c0392b;
+  font-size: 1.25rem;
+}
+
+.heartEmpty {
+  color: var(--color-sepia);
+  font-size: 1.25rem;
+}

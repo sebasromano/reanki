@@ -1,0 +1,13 @@
+.typewriter {
+  font-family: var(--font-display);
+}
+
+.cursor {
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}

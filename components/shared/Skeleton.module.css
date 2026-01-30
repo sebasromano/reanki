@@ -1,0 +1,29 @@
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-sepia) 25%,
+    var(--color-cream) 50%,
+    var(--color-sepia) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.text {
+  height: 1em;
+  border-radius: 4px;
+}
+
+.circle {
+  border-radius: var(--radius-round);
+}
+
+.rectangle {
+  border-radius: var(--radius-md);
+}

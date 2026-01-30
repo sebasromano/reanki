@@ -1,0 +1,29 @@
+.container {
+  max-width: 1200px;
+  margin: var(--spacing-sm) auto 0;
+  padding: 0 var(--spacing-lg);
+}
+
+.track {
+  height: 8px;
+  background: var(--color-cream);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-ink);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--color-accent-gold);
+  border-radius: var(--radius-lg);
+  transition: width 0.5s ease-out;
+}
+
+.label {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-ink);
+  margin-top: var(--spacing-xs);
+  font-family: var(--font-display);
+}

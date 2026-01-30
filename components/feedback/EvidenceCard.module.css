@@ -1,0 +1,100 @@
+.card {
+  position: relative;
+  display: flex;
+  gap: var(--spacing-md);
+  background: white;
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 0 var(--color-ink);
+}
+
+.isNew {
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px var(--color-accent-gold); }
+  50% { box-shadow: 0 0 20px var(--color-accent-gold); }
+}
+
+.newBadge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--color-accent-rust);
+  color: white;
+  font-family: var(--font-display);
+  font-size: 0.625rem;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--color-ink);
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--color-sepia);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  margin: 0 0 var(--spacing-xs) 0;
+  color: var(--color-ink);
+}
+
+.note {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--color-ink);
+  opacity: 0.8;
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag {
+  font-family: var(--font-display);
+  font-size: 0.625rem;
+  background: var(--color-sepia);
+  padding: 2px 6px;
+  border-radius: 2px;
+  color: var(--color-ink);
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .tags {
+    justify-content: center;
+  }
+}

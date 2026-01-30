@@ -1,0 +1,45 @@
+.errorContainer {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-accent-rust);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.message {
+  font-size: 1rem;
+  color: var(--color-ink);
+  margin: 0 0 var(--spacing-lg) 0;
+}
+
+.reloadButton {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  background: var(--color-accent-gold);
+  color: var(--color-ink);
+  border: 3px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--color-ink);
+  transition: all 0.2s ease;
+}
+
+.reloadButton:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--color-ink);
+}
+
+.reloadButton:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--color-ink);
+}

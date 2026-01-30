@@ -1,0 +1,1 @@
+export { LexiconPanel } from './LexiconPanel';

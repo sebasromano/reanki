@@ -1,0 +1,64 @@
+.container {
+  position: fixed;
+  bottom: var(--spacing-lg);
+  right: var(--spacing-lg);
+  z-index: 50;
+}
+
+.hintButton {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-cream);
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 2px 2px 0 var(--color-ink);
+}
+
+.hintButton:hover:not(:disabled) {
+  background: var(--color-accent-gold);
+}
+
+.hintButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hintPanel {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  background: var(--color-cream);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  max-width: 300px;
+  box-shadow: 4px 4px 0 var(--color-ink);
+}
+
+.hintIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.hintText {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.closeHint {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.closeHint:hover {
+  opacity: 1;
+}

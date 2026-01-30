@@ -1,0 +1,1055 @@
+{
+  "missionId": "book_mission_001_misleading_mind",
+  "version": "1.0.0",
+  "language": "es",
+  "title": "The Case of the Misleading Mind",
+  "subtitle": "Una misión de sesgos, voluntad y pistas invisibles",
+  "ui": {
+    "theme": {
+      "accent": "steel",
+      "background": "dark",
+      "nodeStyle": "mind-map",
+      "iconSet": "emoji"
+    },
+    "map": {
+      "layout": "grid",
+      "columnsMobile": 3,
+      "showProgress": true
+    }
+  },
+  "storyPremise": "Eres un detective que investiga una cadena de decisiones aparentemente racionales. No hay un asesino visible: el verdadero foe son los sesgos cognitivos. Para avanzar debes traducir correctamente palabras clave y usarlas para sacar conclusiones.",
+  "difficulty": {
+    "recommendedLevel": "B1-B2",
+    "mistakesAllowedPerScene": 2,
+    "hintPolicy": "oneFreeHintPerScene"
+  },
+  "unlockRules": {
+    "sceneUnlock": "linear",
+    "requires": {
+      "solvePuzzle": true,
+      "confirmConclusion": true
+    }
+  },
+  "lexicon": [
+    {
+      "term": "dull moment",
+      "translation": "momento aburrido",
+      "note": "Se usa casi siempre en negativo: 'no dull moment'."
+    },
+    {
+      "term": "willing",
+      "translation": "dispuesto",
+      "note": "willing to + verbo."
+    },
+    {
+      "term": "arise",
+      "translation": "surgir",
+      "note": "Un problema/efecto surge."
+    },
+    {
+      "term": "likelihood",
+      "translation": "probabilidad",
+      "note": "likelihood of + sustantivo / gerundio."
+    },
+    {
+      "term": "amusement",
+      "translation": "diversión / entretenimiento",
+      "note": "También 'asombro divertido' según contexto."
+    },
+    {
+      "term": "withdraw",
+      "translation": "retirarse / retirar (dinero)",
+      "note": "Ambiguo: persona se retira o retira efectivo."
+    },
+    {
+      "term": "withdrawal",
+      "translation": "retirada / abstinencia / retiro (dinero)",
+      "note": "Muy dependiente del contexto."
+    },
+    {
+      "term": "meek",
+      "translation": "sumiso / dócil",
+      "note": "Tono: no agresivo, a veces negativo."
+    },
+    {
+      "term": "a rule of thumb",
+      "translation": "una regla práctica",
+      "note": "Heurística informal."
+    },
+    {
+      "term": "heuristic",
+      "translation": "heurística (atajo mental)",
+      "note": "Regla simple para decidir rápido."
+    },
+    {
+      "term": "long-held",
+      "translation": "arraigado desde hace tiempo",
+      "note": "Creencia long-held."
+    },
+    {
+      "term": "normally sound",
+      "translation": "normalmente fiable / sensato",
+      "note": "Regla que suele funcionar."
+    },
+    {
+      "term": "was sound",
+      "translation": "era correcto / sólido",
+      "note": "Decisión/argumento sound."
+    },
+    {
+      "term": "neglected",
+      "translation": "descuidado / desatendido",
+      "note": "Algo importante que se ignoró."
+    },
+    {
+      "term": "flaws",
+      "translation": "defectos / fallos",
+      "note": "Errores estructurales."
+    },
+    {
+      "term": "gambles",
+      "translation": "apuestas / riesgos",
+      "note": "Decisiones tomadas con incertidumbre."
+    },
+    {
+      "term": "marvels",
+      "translation": "maravillas",
+      "note": "Algo admirable."
+    },
+    {
+      "term": "beneath",
+      "translation": "debajo de",
+      "note": "Literal o figurado: beneath the surface."
+    },
+    {
+      "term": "stood",
+      "translation": "se mantuvo en pie / estuvo de pie",
+      "note": "También 'stood out' sería otra cosa, aquí no."
+    },
+    {
+      "term": "cue",
+      "translation": "señal / pista",
+      "note": "Señal pequeña que activa una idea."
+    },
+    {
+      "term": "looms",
+      "translation": "se avecina / se cierne",
+      "note": "Algo grande/amenazante que se aproxima."
+    },
+    {
+      "term": "hindsight",
+      "translation": "perspectiva a posteriori",
+      "note": "Con hindsight todo parece obvio."
+    },
+    {
+      "term": "framing effect",
+      "translation": "efecto de encuadre",
+      "note": "Cambiar cómo se presenta cambia la decisión."
+    },
+    {
+      "term": "glance",
+      "translation": "mirada rápida",
+      "note": "At a glance = de un vistazo."
+    },
+    {
+      "term": "glimpse",
+      "translation": "vistazo / vislumbre",
+      "note": "Un fragmento breve de información."
+    },
+    {
+      "term": "at a glance",
+      "translation": "de un vistazo",
+      "note": "Muy visual, útil para tu estilo."
+    },
+    {
+      "term": "blurted",
+      "translation": "soltó (de golpe)",
+      "note": "Decir algo sin pensar."
+    },
+    {
+      "term": "on the tip of your tongue",
+      "translation": "en la punta de la lengua",
+      "note": "Casi lo recuerdas, pero no sale."
+    },
+    {
+      "term": "charm",
+      "translation": "encanto",
+      "note": "Puede ser cualidad o hechizo, aquí cualidad."
+    },
+    {
+      "term": "effortful",
+      "translation": "que requiere esfuerzo",
+      "note": "Cognitivamente costoso."
+    },
+    {
+      "term": "butler",
+      "translation": "mayordomo",
+      "note": "Personaje útil para escenas de servicio/testigos."
+    },
+    {
+      "term": "overcome",
+      "translation": "superar",
+      "note": "overcome fear/strain."
+    },
+    {
+      "term": "stroll",
+      "translation": "pasear",
+      "note": "Leisurely stroll = paseo tranquilo."
+    },
+    {
+      "term": "leisurely",
+      "translation": "tranquilo / sin prisa",
+      "note": "Leisurely pace."
+    },
+    {
+      "term": "readily muster",
+      "translation": "reunir fácilmente (energía/valor)",
+      "note": "muster courage/effort."
+    },
+    {
+      "term": "will",
+      "translation": "voluntad",
+      "note": "Fuerza de autocontrol."
+    },
+    {
+      "term": "deplete",
+      "translation": "agotar",
+      "note": "deplete willpower/energy."
+    },
+    {
+      "term": "laziness",
+      "translation": "pereza",
+      "note": "Puede ser rasgo o estado."
+    },
+    { "term": "obey", "translation": "obedecer", "note": "obey rules/orders." },
+    {
+      "term": "strain",
+      "translation": "tensión / esfuerzo",
+      "note": "Como sustantivo o verbo: to strain."
+    },
+    {
+      "term": "strained",
+      "translation": "tenso / forzado",
+      "note": "strained voice, strained relationship."
+    },
+    {
+      "term": "wary",
+      "translation": "precavido / desconfiado",
+      "note": "Wary of = cauteloso con."
+    },
+    {
+      "term": "arousal",
+      "translation": "activación / excitación",
+      "note": "En psicología: activación fisiológica."
+    },
+    {
+      "term": "parole",
+      "translation": "libertad condicional",
+      "note": "También puede significar 'palabra' (francés), aquí legal."
+    },
+    { "term": "feat", "translation": "hazaña", "note": "Un logro difícil." },
+    {
+      "term": "recoil",
+      "translation": "retroceder / estremecerse",
+      "note": "Reacción instintiva."
+    },
+    {
+      "term": "clenched fist",
+      "translation": "puño apretado",
+      "note": "Señal corporal (cue) de tensión."
+    },
+    {
+      "term": "priming",
+      "translation": "cebado / primado",
+      "note": "Exposición previa que afecta conducta."
+    },
+    {
+      "term": "money-primed",
+      "translation": "primado por dinero",
+      "note": "Activado por señales relacionadas con dinero."
+    },
+    {
+      "term": "wobbly",
+      "translation": "inestable / tambaleante",
+      "note": "wobbly table/legs."
+    },
+    {
+      "term": "elderly",
+      "translation": "anciano / de edad avanzada",
+      "note": "Más respetuoso que 'old'."
+    },
+    {
+      "term": "frown",
+      "translation": "fruncir el ceño",
+      "note": "Señal facial de duda/desagrado."
+    },
+    {
+      "term": "disbelief",
+      "translation": "incredulidad",
+      "note": "No creerte algo."
+    },
+    {
+      "term": "ease",
+      "translation": "facilidad / aliviar",
+      "note": "At ease = cómodo."
+    },
+    {
+      "term": "mislead",
+      "translation": "engañar / inducir a error",
+      "note": "Un dato te mislead."
+    },
+    {
+      "term": "revolves",
+      "translation": "gira en torno a",
+      "note": "The case revolves around..."
+    },
+    { "term": "inborn", "translation": "innato", "note": "Inborn traits." },
+    { "term": "novelty", "translation": "novedad", "note": "Atrae atención." },
+    {
+      "term": "brought to bear",
+      "translation": "aplicar / poner en juego",
+      "note": "Bring evidence to bear = aplicar pruebas."
+    },
+    {
+      "term": "caterers",
+      "translation": "catering / proveedores de comida",
+      "note": "Personajes secundarios útiles."
+    },
+    {
+      "term": "traits",
+      "translation": "rasgos",
+      "note": "Rasgos de personalidad o biológicos."
+    },
+    {
+      "term": "besides",
+      "translation": "además",
+      "note": "Besides, ... = además (conector)."
+    },
+    {
+      "term": "besides that",
+      "translation": "además de eso",
+      "note": "Conector más explícito."
+    },
+    {
+      "term": "therefore",
+      "translation": "por lo tanto",
+      "note": "Conector lógico."
+    },
+    {
+      "term": "furthermore",
+      "translation": "además / es más",
+      "note": "Formal."
+    },
+    {
+      "term": "nevertheless",
+      "translation": "sin embargo",
+      "note": "Contraste."
+    },
+    { "term": "foe", "translation": "enemigo", "note": "Tono narrativo." },
+    {
+      "term": "chin",
+      "translation": "barbilla",
+      "note": "Detalle visual para personajes."
+    },
+    {
+      "term": "ancient",
+      "translation": "antiguo",
+      "note": "Old vs ancient: muy antiguo."
+    },
+    {
+      "term": "scatter",
+      "translation": "dispersar / esparcir",
+      "note": "Scatter papers/clues."
+    },
+    {
+      "term": "off-the-shelf",
+      "translation": "de catálogo / estándar",
+      "note": "Solución genérica."
+    },
+    {
+      "term": "endorsed",
+      "translation": "respaldado / avalado",
+      "note": "Endorsed by experts."
+    },
+    {
+      "term": "upon",
+      "translation": "sobre / al (hacer algo)",
+      "note": "Upon seeing..., upon arrival..."
+    },
+    {
+      "term": "stumped",
+      "translation": "desconcertado / bloqueado",
+      "note": "I’m stumped = no sé qué hacer."
+    },
+    {
+      "term": "aroused",
+      "translation": "activado / excitado / despertado",
+      "note": "En psicología: 'activated' suele encajar."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "S1_first_impression",
+      "node": { "icon": "👁️", "label": "Primera impresión" },
+      "story": {
+        "en": "No dull moment at the gala. The detective catches a cue at a glance: a frown that vanishes in a glance, followed by amusement.",
+        "es": "En la gala no hay dull moment. El detective detecta un cue de un vistazo: un ceño fruncido que desaparece con una mirada rápida, seguido de amusement."
+      },
+      "focusTerms": [
+        "dull moment",
+        "cue",
+        "at a glance",
+        "glance",
+        "frown",
+        "amusement"
+      ],
+      "puzzles": [
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce correctamente “cue” en este contexto.",
+          "term": "cue",
+          "choices": ["señal / pista", "cola (fila)", "cura", "cueca"],
+          "answer": "señal / pista"
+        },
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce correctamente “at a glance”.",
+          "term": "at a glance",
+          "choices": [
+            "de un vistazo",
+            "a la vista (legal)",
+            "en un segundo plano",
+            "a ciegas"
+          ],
+          "answer": "de un vistazo"
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "Las primeras impresiones pueden mislead: una señal breve no es una prueba."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Pista 1: Señal fugaz",
+          "tags": ["cue", "glance", "at a glance"],
+          "noteEs": "Una señal mínima puede disparar una hipótesis… y también sesgarla."
+        }
+      ]
+    },
+    {
+      "id": "S2_rules_fast",
+      "node": { "icon": "🧩", "label": "Reglas rápidas" },
+      "story": {
+        "en": "The butler relies on a long-held rule of thumb. It’s normally sound, but neglected details reveal flaws.",
+        "es": "El mayordomo se apoya en una a rule of thumb long-held. Normalmente es sound, pero detalles neglected revelan flaws."
+      },
+      "focusTerms": [
+        "butler",
+        "a rule of thumb",
+        "heuristic",
+        "long-held",
+        "normally sound",
+        "neglected",
+        "flaws",
+        "was sound"
+      ],
+      "puzzles": [
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja término ↔ traducción correcta.",
+          "pairs": [
+            {
+              "term": "heuristic",
+              "choices": ["hazaña", "heurística (atajo mental)", "barbilla"],
+              "answer": "heurística (atajo mental)"
+            },
+            {
+              "term": "a rule of thumb",
+              "choices": [
+                "regla práctica",
+                "regla de pulgar (literal)",
+                "parole"
+              ],
+              "answer": "regla práctica"
+            }
+          ]
+        },
+        {
+          "type": "mcq_translation",
+          "prompt": "En “normally sound”, sound significa…",
+          "term": "normally sound",
+          "choices": [
+            "sonoro (de sonido)",
+            "normalmente fiable/sensato",
+            "normalmente ruidoso",
+            "normalmente musical"
+          ],
+          "answer": "normalmente fiable/sensato"
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "Una heuristic puede ser útil, pero fuera de contexto induce a error."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Pista 2: Regla que falla",
+          "tags": ["heuristic", "rule of thumb", "neglected", "flaws"],
+          "noteEs": "Lo 'normalmente fiable' no garantiza acierto cuando cambian las condiciones."
+        }
+      ]
+    },
+    {
+      "id": "S3_effort_will",
+      "node": { "icon": "🧠", "label": "Esfuerzo y voluntad" },
+      "story": {
+        "en": "After an effortful interrogation, the detective can’t readily muster patience. Will seems to deplete; laziness arises under strain.",
+        "es": "Tras un interrogatorio effortful, al detective le cuesta readily muster paciencia. La will parece deplete; la laziness surge bajo strain."
+      },
+      "focusTerms": [
+        "effortful",
+        "readily muster",
+        "will",
+        "deplete",
+        "laziness",
+        "arise",
+        "strain",
+        "overcome"
+      ],
+      "puzzles": [
+        {
+          "type": "fill_blank",
+          "prompt": "Completa la frase: “After effortful tasks, will tends to ____.”",
+          "options": ["marvel", "deplete", "scatter", "stroll"],
+          "answer": "deplete"
+        },
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce “readily muster”.",
+          "term": "readily muster",
+          "choices": [
+            "reunir fácilmente (energía/valor)",
+            "medir con regla",
+            "masticar rápido",
+            "olvidar a propósito"
+          ],
+          "answer": "reunir fácilmente (energía/valor)"
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "La fatiga cognitiva altera decisiones: no es falta de moral, es agotamiento."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Pista 3: Voluntad agotada",
+          "tags": ["effortful", "will", "deplete", "strain"],
+          "noteEs": "Cuando la voluntad se agota, aumenta la probabilidad de atajos mentales."
+        }
+      ]
+    },
+    {
+      "id": "S4_obey_withdraw",
+      "node": { "icon": "🚪", "label": "Retirada y obediencia" },
+      "story": {
+        "en": "A meek witness is willing to talk, then suddenly withdraws. The detective grows wary: was it fear, or money?",
+        "es": "Un testigo meek está willing a hablar, y de repente withdraw. El detective se vuelve wary: ¿miedo o dinero?"
+      },
+      "focusTerms": [
+        "meek",
+        "willing",
+        "withdraw",
+        "withdrawal",
+        "wary",
+        "likelihood",
+        "obey"
+      ],
+      "puzzles": [
+        {
+          "type": "mcq_translation",
+          "prompt": "“Withdraw” aquí significa…",
+          "term": "withdraw",
+          "choices": [
+            "retirarse (de la conversación)",
+            "retirar dinero (del banco)",
+            "romper",
+            "anotar"
+          ],
+          "answer": "retirarse (de la conversación)"
+        },
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce “wary”.",
+          "term": "wary",
+          "choices": ["precavido/desconfiado", "alegre", "anciano", "aprobado"],
+          "answer": "precavido/desconfiado"
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "Un cambio súbito es un cue: la probabilidad de presión externa aumenta."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Pista 4: Retirada súbita",
+          "tags": ["withdraw", "wary", "likelihood"],
+          "noteEs": "Retirarse a mitad de frase suele indicar amenaza o incentivo."
+        }
+      ]
+    },
+    {
+      "id": "S5_priming_money",
+      "node": { "icon": "💸", "label": "Priming invisible" },
+      "story": {
+        "en": "Upon seeing off-the-shelf posters about wealth, caterers become money-primed. Cooperation drops; withdrawal rises.",
+        "es": "Upon ver pósters off-the-shelf sobre riqueza, los caterers quedan money-primed. Baja la cooperación; sube la withdrawal."
+      },
+      "focusTerms": [
+        "upon",
+        "off-the-shelf",
+        "caterers",
+        "money-primed",
+        "priming",
+        "withdrawal",
+        "scatter"
+      ],
+      "puzzles": [
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja correctamente.",
+          "pairs": [
+            {
+              "term": "priming",
+              "choices": ["primado/cebado", "hazaña", "ceño"],
+              "answer": "primado/cebado"
+            },
+            {
+              "term": "money-primed",
+              "choices": [
+                "primado por dinero",
+                "privado de dinero",
+                "dinero prestado"
+              ],
+              "answer": "primado por dinero"
+            }
+          ]
+        },
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce “off-the-shelf”.",
+          "term": "off-the-shelf",
+          "choices": [
+            "de catálogo/estándar",
+            "hecho a mano",
+            "antiguo",
+            "debajo de la mesa"
+          ],
+          "answer": "de catálogo/estándar"
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "Un estímulo irrelevante puede cambiar conducta: priming sin que nadie lo note."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Pista 5: Señales de dinero",
+          "tags": ["money-primed", "priming", "withdrawal"],
+          "noteEs": "El entorno activa ideas; esas ideas guían decisiones."
+        }
+      ]
+    },
+    {
+      "id": "S6_body_cues",
+      "node": { "icon": "✊", "label": "Señales corporales" },
+      "story": {
+        "en": "The elderly guest stood beneath an ancient painting. A clenched fist, a strained voice—arousal was rising.",
+        "es": "El invitado elderly stood beneath un cuadro ancient. Un clenched fist, una voz strained: la arousal estaba subiendo."
+      },
+      "focusTerms": [
+        "elderly",
+        "stood",
+        "beneath",
+        "ancient",
+        "clenched fist",
+        "strained",
+        "arousal",
+        "glimpse"
+      ],
+      "puzzles": [
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce “clenched fist”.",
+          "term": "clenched fist",
+          "choices": [
+            "puño apretado",
+            "puño abierto",
+            "dedo índice",
+            "barbilla tensa"
+          ],
+          "answer": "puño apretado"
+        },
+        {
+          "type": "mcq_translation",
+          "prompt": "En psicología, “arousal” suele traducirse como…",
+          "term": "arousal",
+          "choices": ["activación", "aburrimiento", "recuerdo", "negociación"],
+          "answer": "activación"
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "Las microseñales revelan tensión antes de que aparezcan las palabras."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Pista 6: Activación",
+          "tags": ["arousal", "strained", "cue"],
+          "noteEs": "Cuando sube la activación, aumenta la impulsividad y el riesgo de blurted."
+        }
+      ]
+    },
+    {
+      "id": "S7_memory_fail",
+      "node": { "icon": "🗣️", "label": "Memoria traicionera" },
+      "story": {
+        "en": "A key name is on the tip of your tongue. The witness blurts a wrong detail, then recoils in disbelief.",
+        "es": "Un nombre clave está on the tip of your tongue. El testigo blurted un detalle incorrecto y luego recoil con disbelief."
+      },
+      "focusTerms": [
+        "on the tip of your tongue",
+        "blurted",
+        "recoil",
+        "disbelief",
+        "mislead",
+        "wobbly"
+      ],
+      "puzzles": [
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce “on the tip of your tongue”.",
+          "term": "on the tip of your tongue",
+          "choices": [
+            "en la punta de la lengua",
+            "en el borde de la mesa",
+            "fuera de lugar",
+            "en el bolsillo"
+          ],
+          "answer": "en la punta de la lengua"
+        },
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce “blurted”.",
+          "term": "blurted",
+          "choices": [
+            "soltó de golpe",
+            "susurró cuidadosamente",
+            "escribió",
+            "avaló"
+          ],
+          "answer": "soltó de golpe"
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "Un recuerdo accesible no siempre es un recuerdo correcto: puede mislead."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Pista 7: Error impulsivo",
+          "tags": ["blurted", "recoil", "disbelief"],
+          "noteEs": "Los fallos de memoria aumentan con tensión y fatiga."
+        }
+      ]
+    },
+    {
+      "id": "S8_framing_likelihood",
+      "node": { "icon": "🖼️", "label": "Framing" },
+      "story": {
+        "en": "Two reports describe the same gamble. One framing makes it sound safe; the other makes risk loom. Therefore, choices diverge.",
+        "es": "Dos informes describen el mismo gamble. Un framing lo hace sonar seguro; el otro hace que el riesgo loom. Therefore, las elecciones divergen."
+      },
+      "focusTerms": [
+        "framing effect",
+        "gambles",
+        "looms",
+        "likelihood",
+        "therefore",
+        "nevertheless",
+        "furthermore"
+      ],
+      "puzzles": [
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce “framing effect”.",
+          "term": "framing effect",
+          "choices": [
+            "efecto de encuadre",
+            "efecto de enmarcado (marcos físicos)",
+            "efecto espejo",
+            "efecto antiguo"
+          ],
+          "answer": "efecto de encuadre"
+        },
+        {
+          "type": "logic_connectors",
+          "prompt": "Elige el conector correcto para cada frase.",
+          "items": [
+            {
+              "sentence": "El riesgo parecía pequeño; _____, muchos aceptaron.",
+              "choices": ["therefore", "nevertheless", "besides"],
+              "answer": "therefore"
+            },
+            {
+              "sentence": "Era una apuesta; _____, sonreían como si nada.",
+              "choices": ["nevertheless", "therefore", "upon"],
+              "answer": "nevertheless"
+            }
+          ]
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "El framing effect cambia la percepción de probabilidad sin cambiar los hechos."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Pista 8: Mismo hecho, distinto marco",
+          "tags": ["framing effect", "likelihood", "looms"],
+          "noteEs": "Si cambias el marco, cambias la decisión."
+        }
+      ]
+    },
+    {
+      "id": "S9_hindsight_rewrite",
+      "node": { "icon": "⏪", "label": "Hindsight" },
+      "story": {
+        "en": "In hindsight, every clue seems obvious. Besides that, the detective realizes which details were neglected.",
+        "es": "Con hindsight, cada pista parece obvia. Besides that, el detective se da cuenta de qué detalles fueron neglected."
+      },
+      "focusTerms": [
+        "hindsight",
+        "besides",
+        "besides that",
+        "neglected",
+        "mislead",
+        "brought to bear"
+      ],
+      "puzzles": [
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce “hindsight”.",
+          "term": "hindsight",
+          "choices": [
+            "perspectiva a posteriori",
+            "ver con claridad (literal)",
+            "presentimiento",
+            "novedad"
+          ],
+          "answer": "perspectiva a posteriori"
+        },
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce “brought to bear” (aplicado a pruebas).",
+          "term": "brought to bear",
+          "choices": [
+            "aplicar / poner en juego",
+            "tirar a la basura",
+            "pasear sin prisa",
+            "respaldar políticamente"
+          ],
+          "answer": "aplicar / poner en juego"
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "Hindsight crea ilusión de inevitabilidad: parece que siempre fue obvio."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Pista 9: Ilusión retrospectiva",
+          "tags": ["hindsight", "neglected"],
+          "noteEs": "Reescribir la historia después de saber el final es un sesgo común."
+        }
+      ]
+    },
+    {
+      "id": "S10_social_charm",
+      "node": { "icon": "🎭", "label": "Encanto y aval" },
+      "story": {
+        "en": "An endorsed expert with charm makes a shaky story sound credible. The detective is stumped—until he spots the flaws.",
+        "es": "Un experto endorsed con charm hace que una historia dudosa suene creíble. El detective está stumped… hasta que ve los flaws."
+      },
+      "focusTerms": [
+        "endorsed",
+        "charm",
+        "was sound",
+        "stumped",
+        "flaws",
+        "mislead",
+        "ease"
+      ],
+      "puzzles": [
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce “endorsed”.",
+          "term": "endorsed",
+          "choices": [
+            "respaldado/avalado",
+            "enviado",
+            "envejecido",
+            "esparcido"
+          ],
+          "answer": "respaldado/avalado"
+        },
+        {
+          "type": "mcq_translation",
+          "prompt": "Traduce “stumped”.",
+          "term": "stumped",
+          "choices": [
+            "bloqueado/desconcertado",
+            "tranquilo",
+            "despierto",
+            "anciano"
+          ],
+          "answer": "bloqueado/desconcertado"
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "El aval y el encanto pueden mislead: suena correcto aunque no lo sea."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Pista 10: Autoridad persuasiva",
+          "tags": ["endorsed", "charm", "mislead"],
+          "noteEs": "Un argumento puede sonar sólido sin serlo."
+        }
+      ]
+    },
+    {
+      "id": "S11_legal_thread",
+      "node": { "icon": "⚖️", "label": "Hilo legal" },
+      "story": {
+        "en": "A suspect on parole takes reckless gambles to survive. Furthermore, a bank withdrawal appears the same day.",
+        "es": "Un sospechoso en parole toma gambles para sobrevivir. Furthermore, aparece un retiro (withdrawal) bancario el mismo día."
+      },
+      "focusTerms": [
+        "parole",
+        "gambles",
+        "furthermore",
+        "withdrawal",
+        "likelihood",
+        "mislead"
+      ],
+      "puzzles": [
+        {
+          "type": "mcq_translation",
+          "prompt": "En este contexto legal, “parole” es…",
+          "term": "parole",
+          "choices": [
+            "libertad condicional",
+            "palabra secreta",
+            "parola (italiano)",
+            "permiso de paseo"
+          ],
+          "answer": "libertad condicional"
+        },
+        {
+          "type": "mcq_translation",
+          "prompt": "Aquí “withdrawal” se refiere a…",
+          "term": "withdrawal",
+          "choices": [
+            "retiro de dinero",
+            "abstinencia",
+            "retirada militar",
+            "todas son posibles"
+          ],
+          "answer": "retiro de dinero"
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "Hay dos lecturas: retirada emocional vs retirada de dinero. El contexto decide."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Pista 11: Doble significado",
+          "tags": ["withdrawal", "withdraw", "parole"],
+          "noteEs": "Las palabras ambiguas son trampas perfectas para el aprendizaje."
+        }
+      ]
+    },
+    {
+      "id": "S12_final_foe",
+      "node": { "icon": "🏁", "label": "El enemigo real" },
+      "story": {
+        "en": "The case revolves around inborn traits: marvels with flaws. Nevertheless, you can overcome them—one careful translation at a time.",
+        "es": "El caso revolves en torno a traits inborn: marvels con flaws. Nevertheless, puedes overcome esos sesgos… una traducción precisa a la vez."
+      },
+      "focusTerms": [
+        "revolves",
+        "traits",
+        "inborn",
+        "marvels",
+        "flaws",
+        "nevertheless",
+        "overcome",
+        "novelty",
+        "leisurely",
+        "stroll",
+        "chin",
+        "scatter",
+        "wobbly",
+        "aroused",
+        "upon",
+        "beneath",
+        "stood",
+        "ease",
+        "strained",
+        "strain"
+      ],
+      "puzzles": [
+        {
+          "type": "boss_mix",
+          "prompt": "Jefe final: completa 6 traducciones para cerrar el caso.",
+          "items": [
+            {
+              "term": "revolves",
+              "choices": ["gira en torno a", "se retira", "frunce el ceño"],
+              "answer": "gira en torno a"
+            },
+            {
+              "term": "inborn",
+              "choices": ["innato", "antiguo", "de catálogo"],
+              "answer": "innato"
+            },
+            {
+              "term": "novelty",
+              "choices": ["novedad", "probabilidad", "hazaña"],
+              "answer": "novedad"
+            },
+            {
+              "term": "leisurely",
+              "choices": ["tranquilo/sin prisa", "tenso", "respetuoso"],
+              "answer": "tranquilo/sin prisa"
+            },
+            {
+              "term": "chin",
+              "choices": ["barbilla", "puño", "cuchillo"],
+              "answer": "barbilla"
+            },
+            {
+              "term": "mislead",
+              "choices": ["inducir a error", "avalar", "aplicar"],
+              "answer": "inducir a error"
+            }
+          ]
+        }
+      ],
+      "conclusionUnlock": {
+        "textEs": "Caso cerrado: la mente humana es una maravilla imperfecta. El verdadero foe eran los sesgos."
+      },
+      "rewardEvidence": [
+        {
+          "title": "Informe final",
+          "tags": ["foe", "inborn", "traits", "marvels", "flaws"],
+          "noteEs": "Has completado la misión. Puedes rejugar escenas para dominar términos ambiguos (withdraw/withdrawal, strain/strained, arouse/arousal/aroused)."
+        }
+      ]
+    }
+  ],
+  "bonusTermsCoverage": {
+    "termsNotInFocusButInLexicon": [],
+    "note": "Esta misión está diseñada para que todas las palabras/frases aparezcan al menos una vez en lexicon y la gran mayoría además en focusTerms de escenas. Si quieres cobertura 100% en escenas (no solo lexicon), puedo generar escenas extra automáticas."
+  }
+}

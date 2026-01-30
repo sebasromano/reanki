@@ -1,0 +1,83 @@
+/* Vintage button press effect */
+.vintageButton {
+  position: relative;
+  transition: all 0.1s ease;
+  box-shadow: 4px 4px 0 var(--color-ink);
+}
+
+.vintageButton:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--color-ink);
+}
+
+.vintageButton:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--color-ink);
+}
+
+/* Ink splash on click (pseudo-element) */
+.vintageButton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, var(--color-ink) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.vintageButton:active::after {
+  opacity: 0.1;
+}
+
+/* Primary vintage button */
+.primary {
+  composes: vintageButton;
+  background: var(--color-accent-gold);
+  color: var(--color-ink);
+  border: 3px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Secondary vintage button */
+.secondary {
+  composes: vintageButton;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  border: 3px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Ghost button */
+.ghost {
+  background: transparent;
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ghost:hover {
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
+/* Disabled state */
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

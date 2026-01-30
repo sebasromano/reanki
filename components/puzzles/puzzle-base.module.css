@@ -1,0 +1,100 @@
+.prompt {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-ink);
+}
+
+.termHighlight {
+  background: var(--color-accent-gold);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.choicesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+@media (max-width: 600px) {
+  .choicesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.choiceButton {
+  padding: var(--spacing-md);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: white;
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.choiceButton:hover:not(:disabled) {
+  background: var(--color-sepia);
+  transform: translateX(4px);
+}
+
+.choiceButton:disabled {
+  cursor: not-allowed;
+}
+
+.choiceCorrect {
+  background: #27ae60 !important;
+  color: white !important;
+  border-color: #1e8449 !important;
+}
+
+.choiceIncorrect {
+  background: #c0392b !important;
+  color: white !important;
+  border-color: #922b21 !important;
+}
+
+.feedback {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-family: var(--font-display);
+}
+
+.feedbackCorrect {
+  background: #d4edda;
+  border: 2px solid #27ae60;
+  color: #155724;
+}
+
+.feedbackIncorrect {
+  background: #f8d7da;
+  border: 2px solid #c0392b;
+  color: #721c24;
+}
+
+.continueButton {
+  display: block;
+  width: 100%;
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  background: var(--color-accent-gold);
+  color: var(--color-ink);
+  border: 3px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--color-ink);
+  transition: all 0.2s ease;
+}
+
+.continueButton:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--color-ink);
+}

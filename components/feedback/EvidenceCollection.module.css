@@ -1,0 +1,120 @@
+.container {
+  padding: var(--spacing-lg) 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.backLink {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  color: var(--color-ink);
+  text-decoration: none;
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.backLink:hover {
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  margin: 0;
+  color: var(--color-ink);
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--color-accent-rust);
+  margin-top: var(--spacing-xs);
+}
+
+.progressBar {
+  max-width: 400px;
+  height: 12px;
+  margin: 0 auto var(--spacing-xl);
+  background: var(--color-cream);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--color-accent-gold);
+  transition: width 0.5s ease-out;
+}
+
+.scenesList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.sceneSection {
+  background: var(--color-cream);
+  border: 3px solid var(--color-ink);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: 4px 4px 0 var(--color-ink);
+}
+
+.sceneTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  margin: 0 0 var(--spacing-md) 0;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px dashed var(--color-ink);
+}
+
+.sceneIcon {
+  font-size: 1.5rem;
+}
+
+.evidenceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.lockedCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  background: var(--color-sepia);
+  border: 2px dashed var(--color-ink);
+  border-radius: var(--radius-md);
+  opacity: 0.5;
+}
+
+.lockIcon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.lockedText {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  color: var(--color-ink);
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: var(--spacing-xl);
+  font-family: var(--font-display);
+}
