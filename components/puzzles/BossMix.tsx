@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { BossMixPuzzle } from '@/types/mission';
 import styles from './BossMix.module.css';
 import baseStyles from './puzzle-base.module.css';
@@ -17,17 +17,36 @@ interface ItemState {
   isCorrect: boolean | null;
 }
 
+// Shuffle array using Fisher-Yates algorithm
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 export function BossMix({ puzzle, onCorrect, onIncorrect }: BossMixProps) {
   const [itemStates, setItemStates] = useState<ItemState[]>(
     puzzle.items.map(() => ({ selected: null, isCorrect: null }))
   );
   const [currentItemIndex, setCurrentItemIndex] = useState(0);
   
+  // Shuffle choices for each item once on mount
+  const shuffledItems = useMemo(() => 
+    puzzle.items.map(item => ({
+      ...item,
+      choices: shuffleArray(item.choices)
+    })),
+    [puzzle.items]
+  );
+  
   const correctCount = itemStates.filter(s => s.isCorrect === true).length;
   const allComplete = currentItemIndex >= puzzle.items.length;
   
   const handleSelect = (choice: string) => {
-    const item = puzzle.items[currentItemIndex];
+    const item = shuffledItems[currentItemIndex];
     const isCorrect = choice === item.answer;
     
     setItemStates(prev => {
@@ -46,7 +65,7 @@ export function BossMix({ puzzle, onCorrect, onIncorrect }: BossMixProps) {
     }, 1000);
   };
   
-  const currentItem = puzzle.items[currentItemIndex];
+  const currentItem = shuffledItems[currentItemIndex];
   
   return (
     <div className={styles.bossContainer}>
@@ -57,7 +76,7 @@ export function BossMix({ puzzle, onCorrect, onIncorrect }: BossMixProps) {
       </div>
       
       <div className={styles.progressTrack}>
-        {puzzle.items.map((_, index) => (
+        {shuffledItems.map((_, index) => (
           <div 
             key={index}
             className={classNames(styles.progressItem, {
@@ -107,7 +126,7 @@ export function BossMix({ puzzle, onCorrect, onIncorrect }: BossMixProps) {
           </p>
           
           <div className={styles.reviewList}>
-            {puzzle.items.map((item, i) => (
+            {shuffledItems.map((item, i) => (
               <div 
                 key={i} 
                 className={classNames(styles.reviewItem, {

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { MCQTranslationPuzzle } from '@/types/mission';
 import styles from './puzzle-base.module.css';
 import classNames from 'classnames';
@@ -11,10 +11,23 @@ interface MCQTranslationProps {
   onIncorrect: () => void;
 }
 
+// Shuffle array using Fisher-Yates algorithm
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 export function MCQTranslation({ puzzle, onCorrect, onIncorrect }: MCQTranslationProps) {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  
+  // Shuffle choices once on mount
+  const shuffledChoices = useMemo(() => shuffleArray(puzzle.choices), [puzzle.choices]);
   
   const handleSelect = (choice: string) => {
     if (isAnswered) return;
@@ -50,7 +63,7 @@ export function MCQTranslation({ puzzle, onCorrect, onIncorrect }: MCQTranslatio
       </p>
       
       <div className={styles.choicesGrid}>
-        {puzzle.choices.map((choice, index) => (
+        {shuffledChoices.map((choice, index) => (
           <button
             key={index}
             className={classNames(styles.choiceButton, {
